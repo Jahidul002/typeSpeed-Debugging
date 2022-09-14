@@ -114,8 +114,7 @@ const start = () => {
     if (count == 0) {
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
-      countdownOverlay.style.display = "flex";
-      //সমাধান-৩ঃনতুন ক্লাস এড করা হল
+      //সমাধান-৩ঃডিস্প্লে নান করে দেওয়া হল
       countdownOverlay.style.display = "none";
       display.classList.remove("inactive");
       clearInterval(startCountdown);
