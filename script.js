@@ -1,5 +1,6 @@
 const display = document.getElementById("display");
 const question = document.getElementById("question");
+//সমাধান-১ঃ"s" যোগ করা হয়েছে
 const startBtn = document.getElementById("starts");
 const countdownOverlay = document.getElementById("countdown");
 const resultModal = document.getElementById("result");
@@ -107,15 +108,14 @@ const start = () => {
   countdownOverlay.style.display = "flex";
 
   const startCountdown = setInterval(() => {
-    countdownOverlay.innerHTML = '<h1>${count}</h1>';
-
+    // সমাধান-২ঃব্যাকটিক ইউজ করা হয়েছে
+    countdownOverlay.innerHTML = `<h1>${count}</h1>`;
     // finished timer
     if (count == 0) {
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
       countdownOverlay.style.display = "flex";
       display.classList.remove("inactive");
-
       clearInterval(startCountdown);
       startTime = new Date().getTime();
     }
