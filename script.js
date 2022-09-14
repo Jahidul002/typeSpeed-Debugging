@@ -115,6 +115,8 @@ const start = () => {
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
       countdownOverlay.style.display = "flex";
+      //সমাধান-৩ঃনতুন ক্লাস এড করা হল
+      countdownOverlay.style.display = "none";
       display.classList.remove("inactive");
       clearInterval(startCountdown);
       startTime = new Date().getTime();
