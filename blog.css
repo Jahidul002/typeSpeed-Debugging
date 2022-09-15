@@ -1,0 +1,6 @@
+body {
+    background-image: url("blogBG.jpg");
+    background-size: cover;
+    background-position: left top;
+    font-family: "Zilla Slab", serif;
+}

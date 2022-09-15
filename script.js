@@ -9,6 +9,7 @@ const modalBackground = document.getElementById("modal-background");
 // variables
 let userText = "";
 let errorCount = 0;
+errorCount++
 let startTime;
 let questionText = "";
 
@@ -61,7 +62,7 @@ const validate = (key) => {
   }
   return false;
 };
-errorCount++
+// errorCount++
 // FINISHED TYPING
 const gameOver = () => {
   document.removeEventListener("keydown", typeController);
@@ -91,6 +92,7 @@ const gameOver = () => {
   // restart everything
   startTime = null;
   errorCount = 0;
+  // errorCount++
   userText = "";
   display.classList.add("inactive");
 };
@@ -135,6 +137,6 @@ setInterval(() => {
   const currentTime = new Date().getTime();
   const timeSpent = (currentTime - startTime) / 1000;
 
-
+  // সমাধান-৫ঃটাইম কাউন্ট পার্স ইন্টেজার করা হল
   document.getElementById("show-time").innerHTML = `${startTime ? parseInt(timeSpent) : 0} seconds`;
 }, 1000);

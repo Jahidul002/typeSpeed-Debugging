@@ -62,6 +62,7 @@ body {
 
 #result {
   position: fixed;
+  /* সমাধান-৪ঃহিস্টুরি মোডাল মাঝখানে দেখাতে হবে */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -148,6 +149,7 @@ button {
 }
 
 #histories {
+  /* সমাধান-৬ঃহিস্টুরি ৩ কলামে দেখানেও হল */
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 20px;
@@ -196,11 +198,20 @@ button {
   }
 }
 
-.mdlShow {
-  height: 100vh;
+.blgEdit {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  margin-top: 2%;
+  margin-right: 2%;
+  text-decoration: none;
+}
+
+.textEdit {
+  background-color: #424040;
+  border-radius: 3px;
+  font-size: 25px;
+  color: beige;
+  padding: 7px;
 }
 
 @media only screen and (max-width: 500px) {
